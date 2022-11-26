@@ -1,0 +1,26 @@
+/**
+    |============================
+    | Contatcs
+    |============================
+  */
+  .contacts-address {
+    font-style: normal;
+  }
+  
+  .contacts-link {
+    color: var(--grey-cl);
+  }
+  
+  .contacts-uppertitle {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: calc(15 / 11);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  
+    color: var(--light-txt-cl);
+  }
+  
+  .contacts-schedule {
+    color: var(--grey-cl);
+  }

@@ -1,0 +1,27 @@
+ 
+  /**
+    |============================
+    | Header
+    |============================
+  */
+  .header {
+    background-color: var(--dark-bg-cl);
+  }
+  
+  .header-nav-link,
+  .header-contact {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+  
+    color: var(--light-txt-cl);
+  }
+  
+  .header-nav-link:hover,
+  .header-nav-link:focus,
+  .header-contact:hover,
+  .header-contact:focus {
+    color: var(--accent-txt-cl);
+  }
+  
