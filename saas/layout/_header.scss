@@ -1,27 +1,62 @@
- 
-  /**
+/**
     |============================
     | Header
     |============================
   */
-  .header {
-    background-color: var(--dark-bg-cl);
-  }
-  
-  .header-nav-link,
-  .header-contact {
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.33;
-    letter-spacing: 0.1em;
-  
-    color: var(--light-txt-cl);
-  }
-  
-  .header-nav-link:hover,
-  .header-nav-link:focus,
-  .header-contact:hover,
-  .header-contact:focus {
+.header {
+  background-color: var(--dark-bg-cl);
+  padding-top: 52px;
+  padding-bottom: 184px;
+}
+
+.header-wrapper {
+  display: flex;
+}
+
+.header-nav__list {
+  display: flex;
+  gap: 30px;
+  margin-left: 131px;
+  margin-right: 254px;
+}
+.header-nav__link,
+.header-contact__link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+
+  color: var(--light-txt-cl);
+}
+
+.header-contact__link {
+  margin-right: 40px;
+  &:hover,
+  &:focus {
     color: var(--accent-txt-cl);
   }
-  
+}
+
+.header-nav__link {
+  &:hover,
+  &:focus {
+    color: var(--accent-txt-cl);
+  }
+}
+
+.hero-btn {
+  padding: 12px 20px;
+  width: 165px;
+  height: 40px;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(16/12);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+}

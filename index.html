@@ -24,36 +24,38 @@ We work quickly, carefully and with style."
   </head>
   <body>
     <!-- Header section -->
-    <header class="header"></header>
+    <header class="header">
       <div class="container">
-        <a class="header__link" href="">
-          <img
-            class="header__logo"
-            src="./images/header/logo.png"
-            alt="BarberSop logo"
-            width="68"
-            height="56"
-          />
-        </a>
-        <nav class="header-nav">
-          <ul class="list header-nav__list">
-            <li class="header-nav__item" id="item">
-              <a class="header-nav__link link" href="#about">About</a>
-            </li>
-            <li class="header-nav__item">
-              <a class="header-nav__link link" href="#price">Services and prices</a>
-            </li>
-            <li class="header-nav__item">
-              <a class="header-nav__link link" href="#team">Barbers</a>
-            </li>
-            <li class="header-nav__item">
-              <a class="header-nav__link link" href="#contacts">Contacts</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header-contact">
-          <a class="header-contact__link link" href="tel:+380441111111">+38 044 111 11 11</a>
-          <button class="btn hero-btn hero-btn--dark" type="button">Online-booking</button>
+        <div class="header-wrapper">
+          <a class="logo" href="">
+            <img
+              class="header__logo"
+              src="./images/header/logo.png"
+              alt="BarberSop logo"
+              width="68"
+              height="56"
+            />
+          </a>
+          <nav class="header-nav">
+            <ul class="list header-nav__list">
+              <li class="header-nav__item" id="item">
+                <a class="header-nav__link link" href="#about">About</a>
+              </li>
+              <li class="header-nav__item">
+                <a class="header-nav__link link" href="#price">Services and prices</a>
+              </li>
+              <li class="header-nav__item">
+                <a class="header-nav__link link" href="#team">Barbers</a>
+              </li>
+              <li class="header-nav__item">
+                <a class="header-nav__link link" href="#contacts">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header-contact">
+            <a class="header-contact__link link" href="tel:+380441111111">+38 044 111 11 11</a>
+            <button class="btn hero-btn hero-btn--dark" type="button">Online-booking</button>
+          </div>
         </div>
       </div>
     </header>
@@ -65,6 +67,7 @@ We work quickly, carefully and with style."
       
       <section class="hero">
         <div class="container">
+          <div class="hero-right">
           <ul class="media-list list">
             <li class="media-list__item">
               <a class="media-list__link link" href="">Instagram</a>
@@ -91,7 +94,8 @@ We work quickly, carefully and with style."
             </li>
           </ul>
         </div>
-      </section>
+      </div>
+    </section>
   
       
       <!-- About section -->
@@ -167,19 +171,19 @@ We work quickly, carefully and with style."
       <div class="container">
         <ul class="benefits__list list">
           <li class="benefits__item">
-            <p class="benefits__quantity">600 <sup class="benefits-decor">+</sup></p>
+            <p class="benefits__quantity">600 <sup class="benefits__decor">+</sup></p>
             <p class="benefits__text">Satisfied customers per day</p>
           </li>
           <li class="benefits__item">
-            <p class="benefits__quantity">50 <sup class="benefits-decor">+</sup></p>
+            <p class="benefits__quantity">50 <sup class="benefits__decor">+</sup></p>
             <p class="benefits__text">Awards for excellent service</p>
           </li>
           <li class="benefits__item">
-            <p class="benefits__quantity">20 <sup class="benefits-decor">+</sup></p>
+            <p class="benefits__quantity">20 <sup class="benefits__decor">+</sup></p>
             <p class="benefits__text">Kyiv’s best barbers</p>
           </li>
           <li class="benefits__item">
-            <p class="benefits__quantity">100 <sup class="benefits-decor">+</sup></p>
+            <p class="benefits__quantity">100 <sup class="benefits__decor">+</sup></p>
             <p class="benefits__text">Gifts for regular customers</p>
           </li>
         </ul>
@@ -347,8 +351,8 @@ We work quickly, carefully and with style."
       <section class="gallery">
         <div class="container">
           <p class="gallery__uppertitle">in Latin, "barba" means "beard"</p>
-        <h2 class="gallery__title" hidden>Our gallery</h2>
-        <ul class="gallery-list list">
+          <h2 class="gallery__title" hidden>Our gallery</h2>
+          <ul class="gallery-list list">
           <li class="gallery-list__item">
             <img
               class="gallery-list__img"

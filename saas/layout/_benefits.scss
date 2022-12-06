@@ -3,7 +3,7 @@
     | Benefits
     |============================
   */
-  .benefits-quantity {
+  .benefits__quantity {
     font-weight: 700;
     font-size: 42px;
     line-height: calc(57 / 42);
@@ -13,7 +13,7 @@
     color: #303030;
   }
   
-  .benefits-decor {
+  .benefits__decor {
     font-weight: 600;
     font-size: 16px;
     line-height: calc(22 / 16);
@@ -21,7 +21,7 @@
     color: #ff6c00;
   }
   
-  .benefits-text {
+  .benefits__text {
     font-weight: 600;
     font-size: 11px;
     line-height: calc(15 / 11);

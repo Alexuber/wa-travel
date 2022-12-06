@@ -124,6 +124,42 @@ summary {
   display: list-item;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+}
+
 :root {
   /* Fonts */
   --main-font: "Open Sans", sans-serif;
@@ -256,7 +292,7 @@ body {
    | About
    |============================
  */
-.about-desc {
+.about-desc__intro {
   font-size: 14px;
   line-height: 1.8571428571;
   letter-spacing: 0.02em;
@@ -268,7 +304,7 @@ body {
     | Benefits
     |============================
   */
-.benefits-quantity {
+.benefits__quantity {
   font-weight: 700;
   font-size: 42px;
   line-height: 1.3571428571;
@@ -277,7 +313,7 @@ body {
   color: #303030;
 }
 
-.benefits-decor {
+.benefits__decor {
   font-weight: 600;
   font-size: 16px;
   line-height: 1.375;
@@ -285,7 +321,7 @@ body {
   color: #ff6c00;
 }
 
-.benefits-text {
+.benefits__text {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.3636363636;
@@ -333,7 +369,7 @@ body {
   | Footer
   |============================
 */
-.footer-copyright {
+.footer-copyright__copy {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.3636363636;
@@ -342,16 +378,33 @@ body {
 }
 
 /**
-  |============================
-  | Header
-  |============================
-*/
+    |============================
+    | Header
+    |============================
+  */
 .header {
   background-color: var(--dark-bg-cl);
+  padding-top: 52px;
+  padding-bottom: 184px;
 }
 
-.header-nav-link,
-.header-contact {
+.header-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  margin-left: 131px;
+  margin-right: 254px;
+}
+
+.header-nav__link,
+.header-contact__link {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
@@ -359,23 +412,41 @@ body {
   color: var(--light-txt-cl);
 }
 
-.header-nav-link:hover,
-.header-nav-link:focus,
-.header-contact:hover,
-.header-contact:focus {
+.header-contact__link {
+  margin-right: 40px;
+}
+.header-contact__link:hover, .header-contact__link:focus {
   color: var(--accent-txt-cl);
 }
 
+.header-nav__link:hover, .header-nav__link:focus {
+  color: var(--accent-txt-cl);
+}
+
+.hero-btn {
+  padding: 12px 20px;
+  width: 165px;
+  height: 40px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3333333333;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+}
+
 /**
-  |============================
-  | Hero
-  |============================
-*/
+    |============================
+    | Hero
+    |============================
+  */
 .hero {
   background-color: #191c26;
 }
 
-.media-link {
+.media-list__link {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.3636363636;
@@ -383,8 +454,7 @@ body {
   color: #303030;
 }
 
-.media-link:hover,
-.media-link:focus {
+.media-list__link:hover, .media-list__link:focus {
   color: var(--accent-txt-cl);
 }
 
@@ -397,15 +467,12 @@ body {
   background-color: transparent;
   cursor: pointer;
 }
-
 .hero-controls-btn.next {
   text-align: right;
 }
-
 .hero-controls-btn.prev {
   text-align: left;
 }
-
 .hero-controls-btn[disabled] {
   color: var(--grey-txt-cl-60);
 }
@@ -419,7 +486,7 @@ body {
   background-color: var(--dark-bg-cl);
 }
 
-.price-item {
+.price-block__item {
   color: var(--grey-cl);
 }
 
@@ -432,7 +499,7 @@ body {
   background-color: #f7f7f7;
 }
 
-.team-name {
+.team-list__name {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.3888888889;
@@ -440,7 +507,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-.team-position {
+.team-list__position {
   font-size: 14px;
   line-height: 1.3571428571;
   text-align: center;

@@ -1,43 +1,45 @@
-
-  /**
+/**
     |============================
     | Hero
     |============================
   */
-  .hero {
-    background-color: #191c26;
-  }
-  
-  .media-link {
-    font-weight: 600;
-    font-size: 11px;
-    line-height: calc(15 / 11);
-    letter-spacing: 0.2em;
-  
-    color: #303030;
-  }
-  
-  .media-link:hover,
-  .media-link:focus {
+.hero {
+  background-color: #191c26;
+}
+
+.media-list__link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.2em;
+
+  color: #303030;
+}
+
+.media-list__link {
+  &:hover,
+  &:focus {
     color: var(--accent-txt-cl);
   }
-  
-  .hero-controls-btn {
-    font-weight: 600;
-    font-size: 11px;
-    line-height: calc(15 / 11);
-    letter-spacing: 0.1em;
-    color: var(--light-txt-cl);
-    background-color: transparent;
-    cursor: pointer;
-  }
-  
-  .hero-controls-btn.next {
+}
+
+
+.hero-controls-btn {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  color: var(--light-txt-cl);
+  background-color: transparent;
+  cursor: pointer;
+
+  &.next {
     text-align: right;
   }
-  .hero-controls-btn.prev {
+  &.prev {
     text-align: left;
   }
-  .hero-controls-btn[disabled] {
+  &[disabled] {
     color: var(--grey-txt-cl-60);
   }
+}
