@@ -25,8 +25,8 @@ We work quickly, carefully and with style."
   <body>
     <!-- Header section -->
     <header class="header">
-      <div class="container">
-        <div class="header-wrapper">
+      <div class="container header-container">
+        <div class="header-logo">
           <a class="logo" href="">
             <img
               class="header__logo"
@@ -36,10 +36,11 @@ We work quickly, carefully and with style."
               height="56"
             />
           </a>
+        </div>
           <nav class="header-nav">
             <ul class="list header-nav__list">
               <li class="header-nav__item" id="item">
-                <a class="header-nav__link link" href="#about">About</a>
+                <a class="header-nav__link link current" href="#about">About</a>
               </li>
               <li class="header-nav__item">
                 <a class="header-nav__link link" href="#price">Services and prices</a>
@@ -54,9 +55,8 @@ We work quickly, carefully and with style."
           </nav>
           <div class="header-contact">
             <a class="header-contact__link link" href="tel:+380441111111">+38 044 111 11 11</a>
-            <button class="btn hero-btn hero-btn--dark" type="button">Online-booking</button>
+            <button class="btn hero-btn hero-btn--dark" type="button" data-modal-open>Online-booking</button>
           </div>
-        </div>
       </div>
     </header>
   
@@ -66,33 +66,38 @@ We work quickly, carefully and with style."
       <!-- Hero section -->
       
       <section class="hero">
-        <div class="container">
+        <div class="container hero-container">
+          <div class="hero-left">
+            <ul class="hero-left__list media-list list">
+              <li class="media-list__item">
+                <a class="media-list__link link" href="">Instagram</a>
+              </li>
+              <li class="media-list__item">
+                <a class="media-list__link link" href="">Youtube</a>
+              </li>
+            </ul>
+          </div>
+
           <div class="hero-right">
-          <ul class="media-list list">
-            <li class="media-list__item">
-              <a class="media-list__link link" href="">Instagram</a>
-            </li>
-            <li class="media-list__item">
-              <a class="media-list__link link" href="">Youtube</a>
-            </li>
-          </ul>
-  
-          <div class="hero-right">
-            <p class="hero-right__uppertitle hero-right__uppertitle--dark">A hair salon for men in Kyiv</p>
+            <p class="hero-right__uppertitle--dark uppertitle-theme-dark">A hair salon for men in Kyiv</p>
             <h1 class="hero-right__main-title">BarberShop</h1>
             <p class="hero-right__undertitle hero-right__undertitle--dark">
               We are experts in trendy men’s haircuts. We work quickly, carefully and with style.
             </p>
-          </div>
-  
-          <ul class="hero-controls list">
-            <li class="hero-controls__item">
-              <button class="hero-controls__btn prev" type="button">Back</button>
-            </li>
-            <li class="hero-controls__item">
-              <button class="hero-controls__btn next" type="button">Forward</button>
-            </li>
-          </ul>
+          
+            <ul class="hero-right__pagination hero-pagination">
+              <li class="hero-pagination__item active"></li>
+              <li class="hero-pagination__item"></li>
+              <li class="hero-pagination__item"></li>
+            </ul>
+            <ul class="hero-controls list">
+              <li class="hero-controls__item">
+                <button class="hero-controls__btn prev" type="button" disabled>Back</button>
+              </li>
+              <li class="hero-controls__item">
+                <button class="hero-controls__btn next" type="button">Forward</button>
+              </li>
+            </ul>
         </div>
       </div>
     </section>
@@ -101,7 +106,7 @@ We work quickly, carefully and with style."
       <!-- About section -->
       
       <section class="about" id="about">
-        <div class="container">
+        <div class="container about-conatiner">
           <ul class="about__list list">
             <li class="about__item">
               <img
@@ -123,7 +128,7 @@ We work quickly, carefully and with style."
             </li>
           </ul>
           <div class="about-desc">
-            <p class="about-desc__uppertitle">About</p>
+            <p class="about-desc__uppertitle uppertitle">About</p>
             <h2 class="about-desc__title">Best Barbershop in your city</h2>
             <p class="about-desc__undertitle">
               If you want to add more confidence to your image, you should definitely visit us.
@@ -134,7 +139,7 @@ We work quickly, carefully and with style."
               a team that is always "on the same wave" with clients. Therefore, we are always ready to
               improve everyone who comes to us!
             </p>
-            <button class="btn" type="button">online-booking</button>
+            <button class="btn about-btn" type="button">online-booking</button>
           </div>
         </div>
       </section>
@@ -145,7 +150,7 @@ We work quickly, carefully and with style."
       <section class="price" id="price">
         <div class="container">
           <p class="uppertitle uppertitle-theme-dark">spend your time with the best masters</p>
-          <h2 class="title title-theme-dark">Services and prices</h2>
+          <h2 class="price__title title title-theme-dark">Services and prices</h2>
           <div class="price-block">
             <ul class="price-block__list list">
               <li class="price-block__item">Men’s haircut from 300 uah.</li>
@@ -161,14 +166,14 @@ We work quickly, carefully and with style."
               <li class="price-block__item">Camouflage of gray hair from 200 uah.</li>
             </ul>
           </div>
-          <button class="btn btn-theme-dark" type="button">online-booking</button>
+          <button class="price-btn btn btn-theme-dark" type="button">online-booking</button>
         </div>
       </section>
   
       
       <!-- Benefits section -->
     <section class="benefits">
-      <div class="container">
+      <div class="container benefits-container">
         <ul class="benefits__list list">
           <li class="benefits__item">
             <p class="benefits__quantity">600 <sup class="benefits__decor">+</sup></p>
@@ -188,19 +193,21 @@ We work quickly, carefully and with style."
           </li>
         </ul>
         <div class="rewievs">
-          <p class="rewievs__uppertitle">old traditional school</p>
-          <h2 class="rewievs__title">Why people come to us?</h2>
+          <p class="rewievs__uppertitle uppertitle">old traditional school</p>
+          <h2 class="rewievs__title title">Why people come to us?</h2>
           <p class="rewievs__undertitle">
             Only good things are said about us. But it's better to see and feel 1 time than read 10
             times.
           </p>
         </div>
-      </section>
+      </div>
+    </section>
+
       <!-- Team section -->
       <section class="team" id="team">
         <div class="container">
-        <p class="team__uppertitle">for true enjoyers of the atmosphere</p>
-        <h2 class="team__title">Our barbers</h2>
+        <p class="team__uppertitle uppertitle">for true enjoyers of the atmosphere</p>
+        <h2 class="team__title title">Our barbers</h2>
         <ul class="team__list list team-list">
           <li class="team-list__item">
             <img class="team-list__img" src="./images/team/img-1.jpg" alt="John Smith" width="370" height="346" />
@@ -215,6 +222,9 @@ We work quickly, carefully and with style."
                   rel="noopener noreferrer"
                   aria-label="Instagram"
                 >
+                <svg class="social__icon" width="20" height="20">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
                 </a>
               </li>
               <li class="socials__item">
@@ -225,6 +235,9 @@ We work quickly, carefully and with style."
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                <svg class="social__icon" width="20" height="20">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
                 </a>
               </li>
               <li class="socials__item">
@@ -235,6 +248,9 @@ We work quickly, carefully and with style."
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                <svg class="social__icon" width="20" height="20">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
                 </a>
               </li>
               <li class="socials__item">
@@ -245,6 +261,9 @@ We work quickly, carefully and with style."
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                <svg class="social__icon" width="20" height="20">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
                 </a>
               </li>
             </ul>
@@ -262,6 +281,9 @@ We work quickly, carefully and with style."
                   rel="noopener noreferrer"
                   aria-label="Instagram"
                 >
+                <svg class="social__icon" width="20" height="20">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
                 </a>
               </li>
               <li class="socials__item">
@@ -272,6 +294,9 @@ We work quickly, carefully and with style."
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                <svg class="social__icon" width="20" height="20">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
                 </a>
               </li>
               <li class="socials__item">
@@ -282,6 +307,9 @@ We work quickly, carefully and with style."
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                <svg class="social__icon" width="20" height="20">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
                 </a>
               </li>
               <li class="socials__item">
@@ -292,6 +320,9 @@ We work quickly, carefully and with style."
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                <svg class="social__icon" width="20" height="20">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
                 </a>
               </li>
             </ul>
@@ -309,6 +340,9 @@ We work quickly, carefully and with style."
                   rel="noopener noreferrer"
                   aria-label="Instagram"
                 >
+                <svg class="social__icon" width="20" height="20">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
                 </a>
               </li>
               <li class="socials__item">
@@ -319,6 +353,9 @@ We work quickly, carefully and with style."
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                <svg class="social__icon" width="20" height="20">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
                 </a>
               </li>
               <li class="socials__item">
@@ -329,6 +366,9 @@ We work quickly, carefully and with style."
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                <svg class="social__icon" width="20" height="20">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
                 </a>
               </li>
               <li class="socials__item">
@@ -339,6 +379,9 @@ We work quickly, carefully and with style."
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                <svg class="social__icon" width="20" height="20">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
                 </a>
               </li>
             </ul>
@@ -350,7 +393,7 @@ We work quickly, carefully and with style."
       <!-- Gallery section -->
       <section class="gallery">
         <div class="container">
-          <p class="gallery__uppertitle">in Latin, "barba" means "beard"</p>
+          <p class="gallery__uppertitle uppertitle">in Latin, "barba" means "beard"</p>
           <h2 class="gallery__title" hidden>Our gallery</h2>
           <ul class="gallery-list list">
           <li class="gallery-list__item">
@@ -361,6 +404,11 @@ We work quickly, carefully and with style."
               width="270"
               height="360"
             />
+            <div class="gallery-list__overlay">
+              <p class="gallery-list__desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae tenetur iste facere cupiditate minus veniam doloremque ducimus.
+              </p>
+            </div>
           </li>
           <li class="gallery-list__item">
             <img
@@ -370,6 +418,11 @@ We work quickly, carefully and with style."
               width="270"
               height="360"
             />
+            <div class="gallery-list__overlay">
+              <p class="gallery-list__desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae tenetur iste facere cupiditate minus veniam doloremque ducimus.
+              </p>
+            </div>
           </li>
           <li class="gallery-list__item">
             <img
@@ -379,6 +432,11 @@ We work quickly, carefully and with style."
               width="270"
               height="360"
             />
+            <div class="gallery-list__overlay">
+              <p class="gallery-list__desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae tenetur iste facere cupiditate minus veniam doloremque ducimus.
+              </p>
+            </div>
           </li>
           <li class="gallery-list__item">
             <img
@@ -388,13 +446,18 @@ We work quickly, carefully and with style."
               width="270"
               height="360"
             />
+            <div class="gallery-list__overlay">
+              <p class="gallery-list__desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae tenetur iste facere cupiditate minus veniam doloremque ducimus.
+              </p>
+            </div>
           </li>
         </ul>
         </div>
       </section>
       <!-- Booking & Contatcs sections -->
       <section class="contatcs-group">
-        <div class="container">
+        <div class="container contacts-container">
           <div class="booking">
             <h2 class="title booking__title booking__title--dark">Online-booking</h2>
           </div>
@@ -424,7 +487,7 @@ We work quickly, carefully and with style."
               </ul>
             </address>
             <div class="working-hours">
-              <p class="working-hours__uppertitle">working hours</p>
+              <p class="working-hours__uppertitle uppertitle">working hours</p>
               <p class="working-hours__schedule">
                 Every day from <time datetime="09:00">9:00</time> to
                 <time datetime="22:00">22:00</time>
@@ -450,5 +513,18 @@ We work quickly, carefully and with style."
       </div>
       </div>
     </footer>
+
+    <!-- Modal window -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal__btn" type="button" data-modal-close>
+          <svg class="modal__icon" width="20" height="20">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

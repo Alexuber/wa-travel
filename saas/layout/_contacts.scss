@@ -3,13 +3,19 @@
     | Contatcs
     |============================
   */
+
+.contacts-container {
+  display: flex;
+  justify-content: center;
+
+  padding-top: 130px;
+  padding-bottom: 120px;
+}
+
   .contacts-address {
     font-style: normal;
   }
   
-  .contacts-link {
-    color: var(--grey-cl);
-  }
   
   .contacts-uppertitle {
     font-weight: 600;
@@ -19,8 +25,45 @@
     text-transform: uppercase;
   
     color: var(--light-txt-cl);
-  }
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 1px;
+      background-color: rgba(157, 164, 189, 0.6);
   
+      margin-right: 20px;
+    }
+  }
+
+.contacts-list {
+  margin-bottom: 70px;
+}
+
   .contacts-schedule {
     color: var(--grey-cl);
+  }
+
+  .contacts__title--dark {
+color: var(--light-txt-cl);
+margin-bottom: 40px;
+  }
+
+  .contacts-list__link {
+font-weight: 700;
+color: #9DA4BD;
+font-style: normal;
+letter-spacing: 0.02em;
+  }
+
+  .contacts-list__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .working-hours__uppertitle {
+    color:var(--light-txt-cl);
+    margin-bottom: 20px;
   }
