@@ -60,3 +60,18 @@
   margin-right: auto;
   display: block;
 }
+
+.price-block__decor {
+  margin-right: 12px;
+  margin-left: 12px;
+
+  flex-grow: 1;
+  height: 1px;
+  background-color: rgba(157, 164, 189, 0.12);
+}
+
+.price-block__item {
+  display: flex;
+  align-items: baseline;
+}
+  

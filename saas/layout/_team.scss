@@ -62,3 +62,11 @@
     align-items: center;
     gap: 32px;
   }
+
+  .social__icon {
+    transition: fill 250ms linear;
+
+    .socials__link:hover &{
+      fill: var(--accent-txt-cl);
+    }
+  }

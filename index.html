@@ -153,17 +153,17 @@ We work quickly, carefully and with style."
           <h2 class="price__title title title-theme-dark">Services and prices</h2>
           <div class="price-block">
             <ul class="price-block__list list">
-              <li class="price-block__item">Men’s haircut from 300 uah.</li>
-              <li class="price-block__item">Beard trim from 300 uah.</li>
-              <li class="price-block__item">Mustache trim from 200 uah.</li>
-              <li class="price-block__item">Straight razor shave from 200 uah.</li>
+              <li class="price-block__item">Men’s haircut <span class="price-block__decor"></span> from 300 uah.</li>
+              <li class="price-block__item">Beard trim <span class="price-block__decor"></span> from 300 uah.</li>
+              <li class="price-block__item">Mustache trim <span class="price-block__decor"></span> from 200 uah.</li>
+              <li class="price-block__item">Straight razor shave <span class="price-block__decor"></span> from 200 uah.</li>
             </ul>
   
             <ul class="price-block__list list">
-              <li class="price-block__item">Trainee’s haircut from 50 uah.</li>
-              <li class="price-block__item">Haircut under the nozzle from 200 uah.</li>
-              <li class="price-block__item">Children’s haircut (0-12 y.o.) from 300 uah.</li>
-              <li class="price-block__item">Camouflage of gray hair from 200 uah.</li>
+              <li class="price-block__item">Trainee’s haircut <span class="price-block__decor"></span> from 50 uah.</li>
+              <li class="price-block__item">Haircut under the nozzle <span class="price-block__decor"></span> from 200 uah.</li>
+              <li class="price-block__item">Children’s haircut (0-12 y.o.) <span class="price-block__decor"></span> from 300 uah.</li>
+              <li class="price-block__item">Camouflage of gray hair <span class="price-block__decor"></span> from 200 uah.</li>
             </ul>
           </div>
           <button class="price-btn btn btn-theme-dark" type="button">online-booking</button>
@@ -456,83 +456,79 @@ We work quickly, carefully and with style."
         </div>
       </section>
       <!-- Booking & Contatcs sections -->
-      <div class="contatcs-group">
+      <section class="contatcs-group">
         <div class="container contacts-container">
-          <section class="booking section">
-            <div class="booking">
-              <h2 class="title booking__title booking__title--dark">Online-booking</h2>
-              <form class="booking__form" name="booking-form" autocomplete="on">
-                <div class="booking__wrapper">
-                  <label class="booking-form__label label">
-        
-                    <input class="booking-form__input" type="text" name="users_name" placeholder="Alex Black"/>
-                    <span class="label__name">Name*</span>
-                  </label>
-  
-                  <label class="booking-form__label label">
-        
-                    <input class="booking-form__input" type="tel" name="users_tel" placeholder="+380505055555"/>
-                    <span class="label__name">Phone*</span>
-                  </label>
-    
-                </div>
-                <label class="booking-form__label form-textarea">
-                  <textarea
-                    class="form-textarea__textarea"
-                    placeholder=" "
-                  ></textarea>
-                  <span class="label__name">Message</span>
+          <div class="booking">
+            <h2 class="title booking__title booking__title--dark">Online-booking</h2>
+            <form class="booking__form" name="booking-form" autocomplete="on">
+              <div class="booking__wrapper">
+                <label class="booking-form__label label">
+      
+                  <input class="booking-form__input" type="text" name="users_name" placeholder="Alex Black"/>
+                  <span class="label__name">Name*</span>
                 </label>
-                <button class="booking-btn btn" type="submit">Send</button>
-              </form>
-            </div>
-          </section>
-          <section class="contacts section">
-            <div class="contacts" id="contacts">
-              <h2 class="title contacts__title contacts__title--dark">Contacts</h2>
-              <address class="contacts__address">
-                <ul class="contacts-list list">
-                  <li class="contacts-list__item">
-                    <a
-                      class="contacts-list__link link"
-                      href="https://goo.gl/maps/UgYU75aT7GZat5ea9"
-                      target="_blank"
-                      rel="noopener noreferrer"
+
+                <label class="booking-form__label label">
+      
+                  <input class="booking-form__input" type="tel" name="users_tel" placeholder="+380505055555"/>
+                  <span class="label__name">Phone*</span>
+                </label>
+  
+              </div>
+              <label class="booking-form__label form-textarea">
+                <textarea
+                  class="form-textarea__textarea"
+                  placeholder=" "
+                ></textarea>
+                <span class="label__name">Message</span>
+              </label>
+              <button class="booking-btn btn" type="submit">Send</button>
+            </form>
+          </div>
+          <div class="contacts" id="contacts">
+            <h2 class="title contacts__title contacts__title--dark">Contacts</h2>
+            <address class="contacts__address">
+              <ul class="contacts-list list">
+                <li class="contacts-list__item">
+                  <a
+                    class="contacts-list__link link"
+                    href="https://goo.gl/maps/UgYU75aT7GZat5ea9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                  <svg class="contacts-list__icon" width="24" height="24">
+                    <use href="./images/icons.svg#map-pin"></use>
+                  </svg>
+                    st. Vasilkovaya, 7A <br />
+                    Kiev, 08132
+                  </a>
+                </li>
+                <li class="contacts-list__item">
+                  <a class="contacts-list__link link" href="tel:+380441111111">
+                    <svg class="contacts-list__icon" width="24" height="24">
+                      <use href="./images/icons.svg#phone"></use>
+                    </svg>+38 044 111 11 11 </a>
+                </li>
+                <li class="contacts-list__item">
+                  <a class="contacts-list__link link" href="mailto:barbershop@email.com"
                     >
                     <svg class="contacts-list__icon" width="24" height="24">
-                      <use href="./images/icons.svg#map-pin"></use>
-                    </svg>
-                      st. Vasilkovaya, 7A <br />
-                      Kiev, 08132
-                    </a>
-                  </li>
-                  <li class="contacts-list__item">
-                    <a class="contacts-list__link link" href="tel:+380441111111">
-                      <svg class="contacts-list__icon" width="24" height="24">
-                        <use href="./images/icons.svg#phone"></use>
-                      </svg>+38 044 111 11 11 </a>
-                  </li>
-                  <li class="contacts-list__item">
-                    <a class="contacts-list__link link" href="mailto:barbershop@email.com"
-                      >
-                      <svg class="contacts-list__icon" width="24" height="24">
-                        <use href="./images/icons.svg#mail"></use>
-                      </svg>barbershop@email.com
-                    </a>
-                  </li>
-                </ul>
-              </address>
-              <div class="working-hours">
-                <p class="working-hours__uppertitle uppertitle">working hours</p>
-                <p class="working-hours__schedule">
-                  Every day from <time datetime="09:00">9:00</time> to
-                  <time datetime="22:00">22:00</time>
-                </p>
-              </div>
-            </div>  
-          </section>
+                      <use href="./images/icons.svg#mail"></use>
+                    </svg>barbershop@email.com
+                  </a>
+                </li>
+              </ul>
+            </address>
+            <div class="working-hours">
+              <p class="working-hours__uppertitle uppertitle">working hours</p>
+              <p class="working-hours__schedule">
+                Every day from <time datetime="09:00">9:00</time> to
+                <time datetime="22:00">22:00</time>
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
     </main>
     <!-- Footer section -->
     <footer class="footer">

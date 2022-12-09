@@ -4,19 +4,19 @@
     |============================
   */
 
-.contacts.section {
-  max-width: 1600px;
-}
 
 .contatcs-group {
   background-color: var(--dark-bg-cl);
   background-image: url(../../images/booking/bg-img.png);
-  background-position: center;
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
+  
+}
+
+.contacts-container {
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .booking {
@@ -159,10 +159,5 @@
 }
 
 .working-hours__schedule {
-  font-size: 18px;
-line-height: calc(30/18);
-
-letter-spacing: 0.02em;
-
-color: #9DA4BD;
+  color: #9DA4BD;
 }

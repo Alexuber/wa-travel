@@ -142,7 +142,14 @@ animation: vertical-move 1s ease-in-out 200ms 1 both;
   transform: rotate(270deg);
 }
 
+.media-list {
+  padding-right: 300px;
+}
 .media-list__item:first-child {
+ margin-right: 40px;
+}
+
+.media-list:first-child {
   display: flex;
   align-items: center;
 

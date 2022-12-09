@@ -4,6 +4,10 @@
     | Footer
     |============================
   */
+.footer {
+  padding: 56px 0;
+}
+
   .footer-copyright__copy {
     font-weight: 600;
     font-size: 11px;
@@ -11,4 +15,15 @@
     letter-spacing: 0.2em;
   
     color: var(--grey-cl);
+
+    margin-right: 770px;
+    display: inline-block;
+  }
+
+  .footer-copyright {
+    display: flex;
+  }
+
+  .media-list {
+    display: flex;
   }
