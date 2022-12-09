@@ -79,7 +79,7 @@ We work quickly, carefully and with style."
           </div>
 
           <div class="hero-right">
-            <p class="hero-right__uppertitle--dark uppertitle-theme-dark">A hair salon for men in Kyiv</p>
+            <p class="hero-right__uppertitle--dark uppertitle-theme-dark hero__uppertitle">A hair salon for men in Kyiv</p>
             <h1 class="hero-right__main-title">BarberShop</h1>
             <p class="hero-right__undertitle hero-right__undertitle--dark">
               We are experts in trendy men’s haircuts. We work quickly, carefully and with style.
@@ -456,46 +456,83 @@ We work quickly, carefully and with style."
         </div>
       </section>
       <!-- Booking & Contatcs sections -->
-      <section class="contatcs-group">
+      <div class="contatcs-group">
         <div class="container contacts-container">
-          <div class="booking">
-            <h2 class="title booking__title booking__title--dark">Online-booking</h2>
-          </div>
-          <div class="contacts" id="contacts">
-            <h2 class="title contacts__title contacts__title--dark">Contacts</h2>
-            <address class="contacts__address">
-              <ul class="contacts-list list">
-                <li class="contacts-list__item">
-                  <a
-                    class="contacts-list__link link"
-                    href="https://goo.gl/maps/UgYU75aT7GZat5ea9"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    st. Vasilkovaya, 7A <br />
-                    Kiev, 08132
-                  </a>
-                </li>
-                <li class="contacts-list__item">
-                  <a class="contacts-list__link link" href="tel:+380441111111">+38 044 111 11 11 </a>
-                </li>
-                <li class="contacts-list__item">
-                  <a class="contacts-list__link link" href="mailto:barbershop@email.com"
-                    >barbershop@email.com
-                  </a>
-                </li>
-              </ul>
-            </address>
-            <div class="working-hours">
-              <p class="working-hours__uppertitle uppertitle">working hours</p>
-              <p class="working-hours__schedule">
-                Every day from <time datetime="09:00">9:00</time> to
-                <time datetime="22:00">22:00</time>
-              </p>
+          <section class="booking section">
+            <div class="booking">
+              <h2 class="title booking__title booking__title--dark">Online-booking</h2>
+              <form class="booking__form" name="booking-form" autocomplete="on">
+                <div class="booking__wrapper">
+                  <label class="booking-form__label label">
+        
+                    <input class="booking-form__input" type="text" name="users_name" placeholder="Alex Black"/>
+                    <span class="label__name">Name*</span>
+                  </label>
+  
+                  <label class="booking-form__label label">
+        
+                    <input class="booking-form__input" type="tel" name="users_tel" placeholder="+380505055555"/>
+                    <span class="label__name">Phone*</span>
+                  </label>
+    
+                </div>
+                <label class="booking-form__label form-textarea">
+                  <textarea
+                    class="form-textarea__textarea"
+                    placeholder=" "
+                  ></textarea>
+                  <span class="label__name">Message</span>
+                </label>
+                <button class="booking-btn btn" type="submit">Send</button>
+              </form>
             </div>
-          </div>
+          </section>
+          <section class="contacts section">
+            <div class="contacts" id="contacts">
+              <h2 class="title contacts__title contacts__title--dark">Contacts</h2>
+              <address class="contacts__address">
+                <ul class="contacts-list list">
+                  <li class="contacts-list__item">
+                    <a
+                      class="contacts-list__link link"
+                      href="https://goo.gl/maps/UgYU75aT7GZat5ea9"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                    <svg class="contacts-list__icon" width="24" height="24">
+                      <use href="./images/icons.svg#map-pin"></use>
+                    </svg>
+                      st. Vasilkovaya, 7A <br />
+                      Kiev, 08132
+                    </a>
+                  </li>
+                  <li class="contacts-list__item">
+                    <a class="contacts-list__link link" href="tel:+380441111111">
+                      <svg class="contacts-list__icon" width="24" height="24">
+                        <use href="./images/icons.svg#phone"></use>
+                      </svg>+38 044 111 11 11 </a>
+                  </li>
+                  <li class="contacts-list__item">
+                    <a class="contacts-list__link link" href="mailto:barbershop@email.com"
+                      >
+                      <svg class="contacts-list__icon" width="24" height="24">
+                        <use href="./images/icons.svg#mail"></use>
+                      </svg>barbershop@email.com
+                    </a>
+                  </li>
+                </ul>
+              </address>
+              <div class="working-hours">
+                <p class="working-hours__uppertitle uppertitle">working hours</p>
+                <p class="working-hours__schedule">
+                  Every day from <time datetime="09:00">9:00</time> to
+                  <time datetime="22:00">22:00</time>
+                </p>
+              </div>
+            </div>  
+          </section>
         </div>
-      </section>
+      </div>
     </main>
     <!-- Footer section -->
     <footer class="footer">
@@ -523,6 +560,61 @@ We work quickly, carefully and with style."
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <span class="backdrop-modal__title"
+          >Leave your contact info</span
+        >
+        <form class="backdrop__form backdrop-form">
+          
+          <div class="backdrop-form__group">
+              <input class="backdrop-form__input" type="text" name="users_name" id="name" placeholder="Alex Black"/>
+              <label class="backdrop-form__label label" for="name">Name</label>
+          </div>
+
+          
+            <div class="backdrop-form__group">
+              <input class="backdrop-form__input" type="tel" name="users_tel" id="phone" placeholder="+380505055555"/>
+              <label class="backdrop-form__label label" for="phone">Phone</label>
+            </div>
+
+
+          <div class="backdrop-form__group">
+            <input
+              class="backdrop-form__input"
+              type="email"
+              name="users_email" id="email" placeholder="examle@gmail.com"
+            />
+            <label class="backdrop-form__label label" for="email">Email</label>
+          </div>
+
+          <div class="backdrop-form__group">
+              <textarea
+              class="form-textarea__textarea"
+              placeholder="Message..." id="message"
+            ></textarea>
+
+          
+          </div>
+
+            <input
+            class="checkbox-input"
+            type="checkbox"
+            name="agree"
+            id="check"
+          />
+
+          <label class="backdrop-form__checkbox checkbox" for="check">
+            <span class="custom-checkbox">
+              <svg class="icon-checkbox" width="20" height="15">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+            </span>
+            <p class="checkbox__terms">
+              Погоджуюся з розсилкою та приймаю
+              <a href="" class="checkbox-link">Умови договору</a>
+            </p> 
+          </label>
+          <button class="button backdrop-btn hero-btn btn" type="submit">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
