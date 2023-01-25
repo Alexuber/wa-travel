@@ -4,14 +4,12 @@
     |============================
   */
 
-
 .contatcs-group {
   background-color: var(--dark-bg-cl);
-  background-image: url(../../images/booking/bg-img.png);
+  background-image: url(./images/booking/bg-img.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  
 }
 
 .contacts-container {
@@ -111,7 +109,6 @@
   transform-origin: left;
 }
 
-
 .form-textarea__textarea {
   width: 100%;
   border: none;
@@ -122,7 +119,6 @@
   color: var(--light-txt-cl);
 
   transition: border-color 300ms;
-  
 
   &:focus + .label__name {
     transform: translateY(-100%);
@@ -134,8 +130,6 @@
 .form-textarea {
   display: block;
   margin-bottom: 44px;
-
-
 }
 
 .contacts-list__item {
@@ -159,5 +153,5 @@
 }
 
 .working-hours__schedule {
-  color: #9DA4BD;
+  color: #9da4bd;
 }
