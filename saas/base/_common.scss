@@ -68,11 +68,9 @@ body {
     height: 1px;
     background-color: var(--main-txt-cl);
 
-
     margin-right: 20px;
   }
 }
-
 
 .uppertitle-theme-dark {
   color: var(--grey-cl-60);
@@ -84,7 +82,6 @@ body {
     width: 60px;
     height: 1px;
     margin-right: 20px;
-
   }
 }
 
@@ -137,4 +134,8 @@ body {
 button {
   cursor: pointer;
   display: block;
+}
+
+.transparency {
+  background-color: black;
 }
