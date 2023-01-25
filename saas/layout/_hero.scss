@@ -103,11 +103,10 @@
   margin-left: 100px;
 
   animation: left-move 1s ease-in-out 450ms 1 both;
-
 }
 
 .hero__uppertitle {
-animation: vertical-move 1s ease-in-out 200ms 1 both;
+  animation: vertical-move 1s ease-in-out 200ms 1 both;
 }
 
 .hero-right__undertitle--dark {
@@ -123,7 +122,6 @@ animation: vertical-move 1s ease-in-out 200ms 1 both;
   margin-left: 100px;
 
   animation: up-move 1s ease-in-out 800ms 1 both;
-
 }
 
 .hero-controls {
@@ -146,7 +144,7 @@ animation: vertical-move 1s ease-in-out 200ms 1 both;
   padding-right: 300px;
 }
 .media-list__item:first-child {
- margin-right: 40px;
+  margin-right: 40px;
 }
 
 .media-list:first-child {
