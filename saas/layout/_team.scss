@@ -8,6 +8,11 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  flex-direction: column;
+  align-content: center;
+  @include media-min(desktop) {
+    flex-direction: row;
+  }
 }
 
 .team-list__item {
@@ -29,6 +34,15 @@
   margin-bottom: 8px;
 }
 
+.team__uppertitle {
+  @include media-min(tablet) {
+    margin-left: 180px;
+  }
+  @include media-min(desktop) {
+    margin-left: 0;
+  }
+}
+
 .team-list__position {
   font-size: 14px;
   line-height: calc(19 / 14);
@@ -42,6 +56,12 @@
 
 .team__title {
   margin-bottom: 44px;
+  @include media-min(tablet) {
+    margin-left: 180px;
+  }
+  @include media-min(desktop) {
+    margin-left: 0;
+  }
 }
 
 .team-list__img {

@@ -190,6 +190,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   min-width: 320px;
+  padding-left: 15px;
+  padding-right: 15px;
   outline: 2px solid red;
   outline-offset: -2px;
 }
@@ -200,8 +202,6 @@ body {
 }
 @media screen and (min-width: 768px) {
   .container {
-    padding-left: 15px;
-    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
     width: 768px;
@@ -461,13 +461,35 @@ button {
 }
 
 .benefits {
-  padding: 120px 0;
+  padding: 85px 0;
+}
+@media screen and (min-width: 768px) {
+  .benefits {
+    padding: 100px 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .benefits {
+    padding: 120px 0;
+  }
 }
 
 .benefits-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+@media screen and (min-width: 1280px) {
+  .benefits-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .benefits__quantity {
@@ -512,6 +534,16 @@ button {
       -ms-flex-align: start;
           align-items: flex-start;
 }
+@media screen and (min-width: 768px) {
+  .benefits__list {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .benefits__list {
+    margin-right: auto;
+  }
+}
 
 .benefits__item {
   width: 170px;
@@ -535,8 +567,13 @@ button {
 }
 
 .rewievs__undertitle {
-  color: var(--dark-txt-cl);
-  width: 500px;
+  width: 420px;
+}
+@media screen and (min-width: 768px) {
+  .rewievs__undertitle {
+    color: var(--dark-txt-cl);
+    width: 500px;
+  }
 }
 
 .contatcs-group {
@@ -838,7 +875,17 @@ button {
 }
 
 .gallery {
-  padding: 120px 0;
+  padding: 85px 0;
+}
+@media screen and (min-width: 768px) {
+  .gallery {
+    padding: 100px 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .gallery {
+    padding: 120px 0;
+  }
 }
 
 .gallery__uppertitle {
@@ -847,12 +894,17 @@ button {
 }
 
 .gallery-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 30px;
+  margin-top: 70px;
+}
+@media screen and (min-width: 1280px) {
+  .gallery-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 .gallery-list__item {
@@ -860,6 +912,9 @@ button {
       flex-basis: calc((100% - 90px) / 4);
   position: relative;
   overflow: hidden;
+}
+.gallery-list__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .gallery-list__overlay {
@@ -893,6 +948,12 @@ button {
 
 .gallery-list__desc {
   font-size: 16px;
+}
+
+.gallery-list__img {
+  width: 420px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header {
@@ -1404,14 +1465,25 @@ button {
 }
 .price {
   background-color: #111319;
-  padding: 120px 0;
+  padding: 85px 0;
   background-image: url(../images/price/img.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+@media screen and (min-width: 768px) {
+  .price {
+    padding: 100px 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .price {
+    padding: 120px 0;
+  }
+}
 
 .price__title {
+  text-align: center;
   margin-bottom: 44px;
 }
 
@@ -1429,22 +1501,48 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 44px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (min-width: 1280px) {
+  .price-block {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 44px;
+  }
 }
 
 .price-block__list {
-  width: 570px;
-}
-
-.price-block__list {
-  padding: 30px 20px;
+  margin-left: 40px;
+  margin-right: 20px;
+  padding-right: 15px;
+  width: 418px;
   background: -webkit-gradient(linear, left top, left bottom, from(#090b13), to(rgba(9, 11, 19, 0.2)));
   background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
 }
-.price-block__list:not(:last-child) {
-  margin-right: 30px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#171a24), to(rgba(23, 26, 36, 0.2)));
-  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+@media screen and (min-width: 768px) {
+  .price-block__list {
+    padding: 30px 20px;
+    width: 570px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .price-block__list {
+    width: 670px;
+  }
+  .price-block__list:not(:last-child) {
+    margin-right: 30px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#171a24), to(rgba(23, 26, 36, 0.2)));
+    background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  }
+}
+.price-block__list:last-child {
+  margin-bottom: 45px;
+  margin-top: 20px;
 }
 
 .price-btn {
@@ -1456,6 +1554,10 @@ button {
   margin-left: auto;
   margin-right: auto;
   display: block;
+}
+
+.price .uppertitle {
+  margin-left: 40px;
 }
 
 .price-block__decor {
@@ -1490,6 +1592,20 @@ button {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+@media screen and (min-width: 1280px) {
+  .team-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .team-list__item {
@@ -1511,6 +1627,17 @@ button {
   margin-bottom: 8px;
 }
 
+@media screen and (min-width: 768px) {
+  .team__uppertitle {
+    margin-left: 180px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .team__uppertitle {
+    margin-left: 0;
+  }
+}
+
 .team-list__position {
   font-size: 14px;
   line-height: 1.3571428571;
@@ -1522,6 +1649,16 @@ button {
 
 .team__title {
   margin-bottom: 44px;
+}
+@media screen and (min-width: 768px) {
+  .team__title {
+    margin-left: 180px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .team__title {
+    margin-left: 0;
+  }
 }
 
 .team-list__img {

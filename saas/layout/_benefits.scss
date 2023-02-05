@@ -1,9 +1,20 @@
 .benefits {
-  padding: 120px 0;
+  padding: 85px 0;
+  @include media-min(tablet) {
+    padding: 100px 0;
+  }
+  @include media-min(desktop) {
+    padding: 120px 0;
+  }
 }
 
 .benefits-container {
   display: flex;
+  flex-direction: column-reverse;
+
+  @include media-min(desktop) {
+    flex-direction: row;
+  }
 }
 
 .benefits__quantity {
@@ -46,6 +57,13 @@
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+
+  @include media-min(tablet) {
+    margin-right: 0;
+  }
+  @include media-min(desktop) {
+    margin-right: auto;
+  }
 }
 
 .benefits__item {
@@ -70,6 +88,9 @@
 }
 
 .rewievs__undertitle {
-  color: var(--dark-txt-cl);
-  width: 500px;
+  width: 420px;
+  @include media-min(tablet) {
+    color: var(--dark-txt-cl);
+    width: 500px;
+  }
 }

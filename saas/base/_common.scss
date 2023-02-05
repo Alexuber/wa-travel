@@ -10,15 +10,13 @@ body {
   margin-left: auto;
   margin-right: auto;
   min-width: 320px;
-
+  padding-left: 15px;
+  padding-right: 15px;
   @include media-min(mobile-resp) {
     width: 480px;
   }
 
   @include media-min(tablet) {
-    padding-left: 15px;
-    padding-right: 15px;
-
     margin-left: auto;
     margin-right: auto;
     width: 768px;
