@@ -1,6 +1,15 @@
 .about {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 85px;
+  padding-bottom: 85px;
+
+  @include media-min(tablet) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  @include media-min(desctop) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 .about-conatiner {
@@ -11,6 +20,9 @@
 
 .about-desc {
   width: 470px;
+  @include media-max(desctop) {
+    margin-left: 30px;
+  }
 }
 .about-desc__intro {
   font-size: 14px;
@@ -21,9 +33,18 @@
 }
 
 .about__list {
-  display: flex;
-  gap: 30px;
-  margin-right: 30px;
+  display: none;
+
+  @include media-min(tablet) {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-right: 30px;
+  }
+
+  @include media-min(desktop) {
+    flex-direction: row;
+  }
 }
 
 .about-desc__uppertitle {
@@ -45,13 +66,17 @@
 .about-desc__title {
   font-family: var(--secondary-font);
   font-weight: 700;
-  font-size: 42px;
+  font-size: 33px;
   line-height: calc(49 / 42);
   letter-spacing: 0.05em;
 
   color: var(--main-text-color);
 
   margin-bottom: 20px;
+
+  @include media-min(tablet) {
+    font-size: 42px;
+  }
 }
 
 .about__item {
@@ -75,6 +100,11 @@
   color: var(--dark-txt-cl);
 
   margin-bottom: 20px;
+  font-size: 16px;
+
+  @include media-min(tablet) {
+    font-size: 18px;
+  }
 }
 .about-btn {
   padding: 12px 20px;
