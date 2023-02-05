@@ -1,15 +1,13 @@
-/**
-    |============================
-    | Header
-    |============================
-  */
 .header {
-  padding-top: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 10;
+
+  transition: 300ms linear;
 }
 
 .header-container {
@@ -90,4 +88,13 @@
 
   border: 1px solid #ff6c00;
   border-radius: 25px;
+}
+
+.header-scroll-dark {
+  background-color: #363636;
+  & .header_logo {
+    transition: fill 300ms linear;
+
+    fill: #fff;
+  }
 }
