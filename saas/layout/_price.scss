@@ -43,8 +43,16 @@
 .price-block__list {
   margin-left: auto;
   margin-right: auto;
-  width: 418px;
+  width: 300px;
   background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+
+  @media screen and (min-width: 440px) {
+    width: 400px;
+  }
+
+  @include media-min(mobile) {
+    width: 420px;
+  }
 
   @include media-min(tablet) {
     padding: 30px 20px;
@@ -93,4 +101,8 @@
 .price-block__item {
   display: flex;
   align-items: baseline;
+
+  @media screen and (max-width: 440px) {
+    font-size: 12px;
+  }
 }

@@ -34,7 +34,6 @@
 }
 
 .header-logo {
-
   @include media-min(tablet) {
     width: 70px;
   }
@@ -53,10 +52,9 @@
 }
 
 .header-nav__list {
-
   @include media-min(tablet) {
     display: flex;
-    margin-right: 60px;
+    margin-right: 90px;
     margin-left: 60px;
     gap: 15px;
   }
@@ -93,7 +91,7 @@
 
 .header-contact__link {
   margin-right: 0;
-  
+
   @include media-min(desktop) {
     margin-right: 40px;
   }

@@ -64,6 +64,17 @@ We work quickly, carefully and with style."
 
       <section class="hero">
         <div class="container hero-container">
+          <a class="logo mob-menu__logo--main" href="#">
+            <svg class="header_logo" width="68" height="56">
+              <use href="./images/icons.svg#icon-logo"></use>
+            </svg>
+          </a>
+
+          <button class="mobile-menu-btn menu-toggle js-open-menu">
+            <svg class="mobile-menu-btn__icon" width="40" height="40">
+              <use class="mobile-menu-btn__symbol" href="./images/icons.svg#icon-buger-menu"></use>
+            </svg>
+          </button>
           <div class="hero-left">
             <ul class="hero-left__list media-list list">
               <li class="media-list__item">
@@ -137,7 +148,7 @@ We work quickly, carefully and with style."
               are a team that is always "on the same wave" with clients. Therefore, we are always
               ready to improve everyone who comes to us!
             </p>
-            <button class="btn about-btn" type="button">online-booking</button>
+            <button class="btn about-btn" type="button" data-modal-open>online-booking</button>
           </div>
         </div>
       </section>
@@ -180,7 +191,9 @@ We work quickly, carefully and with style."
               </li>
             </ul>
           </div>
-          <button class="price-btn btn btn-theme-dark" type="button">online-booking</button>
+          <button class="price-btn btn btn-theme-dark" type="button" data-modal-open>
+            online-booking
+          </button>
         </div>
       </section>
 
@@ -646,14 +659,76 @@ We work quickly, carefully and with style."
               </svg>
             </span>
             <span class="checkbox__terms">
-              Погоджуюся з розсилкою та приймаю
-              <a href="" class="checkbox-link">Умови договору</a>
+              I agree with the mailing and accept the
+              <a href="" class="checkbox-link">Terms of the Agreement</a>
             </span>
           </label>
           <button class="button backdrop-btn hero-btn btn" type="submit">Відправити</button>
         </form>
       </div>
     </div>
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <div class="container">
+        <a class="logo mob-menu__logo--inside" href="#">
+          <svg class="header_logo" width="45" height="42">
+            <use href="./images/icons.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <button class="menu-toggle js-close-menu">
+          <svg class="icon-close-mobile-menu" width="40" height="40">
+            <use href="./images/icons.svg#icon-close-mobile-menu"></use>
+          </svg>
+        </button>
+
+        <div class="mob-wrapper">
+          <ul class="mobile-menu">
+            <li class="mobile-menu__item">
+              <a href="./index.html" class="mobile-menu-link mobile-menu-link--active">About</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="" class="mobile-menu-link">Services and prices</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="" class="mobile-menu-link">Barbers</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="" class="mobile-menu-link">Contacts</a>
+            </li>
+          </ul>
+
+          <div class="mob-contacts">
+            <ul class="mobile-menu-contacts">
+              <li class="mobile-menu-contacts__item">
+                <a class="mobile-menu-contacts__link" href="tel:+380961111111">
+                  +38 044 111 11 11
+                </a>
+              </li>
+            </ul>
+            <button class="btn about-btn mobile-btn" type="button" data-modal-open>
+              online-booking
+            </button>
+
+            <ul class="mob-menu-socials">
+              <li class="mob-menu-socials__item">
+                <a href="" class="mob-menu-socials__link">Instagram</a>
+              </li>
+              <li class="mob-menu-socials__item">
+                <a href="" class="mob-menu-socials__link">Youtube</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js" type="module"></script>
     <script src="./js/hero-scroll.js" type="module"></script>
   </body>

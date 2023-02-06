@@ -1,6 +1,6 @@
 .benefits {
   padding: 85px 0;
-  
+
   @include media-min(tablet) {
     padding: 100px 0;
   }
@@ -52,7 +52,6 @@
 }
 
 .benefits__list {
-  width: 370px;
   margin-right: auto;
   margin-left: auto;
   display: flex;
@@ -60,6 +59,7 @@
   align-items: flex-start;
 
   @include media-min(tablet) {
+    width: 370px;
     margin-right: 0;
   }
   @include media-min(desktop) {
@@ -68,7 +68,7 @@
 }
 
 .benefits__item {
-  width: 170px;
+  max-width: 193px;
   min-height: 133px;
   padding: 20px 24px;
   background-color: #f7f7f7;
@@ -76,6 +76,10 @@
   &:nth-child(2n) {
     margin-top: 30px;
     margin-left: 30px;
+  }
+  @include media-min(tablet) {
+    width: 170px;
+    min-height: 133px;
   }
 }
 
@@ -89,10 +93,11 @@
 }
 
 .rewievs__undertitle {
-  width: 420px;
-
+  max-width: 420px;
+  font-size: 14px;
   @include media-min(tablet) {
     color: var(--dark-txt-cl);
-    width: 500px;
+    max-width: 500px;
+    font-size: 18px;
   }
 }
