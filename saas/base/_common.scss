@@ -7,11 +7,24 @@ body {
 }
 
 .container {
-  width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  min-width: 320px;
   padding-left: 15px;
   padding-right: 15px;
+  @include media-min(mobile-resp) {
+    width: 480px;
+  }
+
+  @include media-min(tablet) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 768px;
+  }
+
+  @include media-min(desktop) {
+    width: 1280px;
+  }
 }
 
 .link {
@@ -58,7 +71,6 @@ body {
 
   &::before {
     content: '';
-    display: block;
     width: 60px;
     height: 1px;
     background-color: var(--main-txt-cl);
@@ -133,4 +145,14 @@ button {
 
 .transparency {
   background-color: black;
+}
+
+.price .uppertitle-theme-dark {
+  margin-left: 10px;
+  @include media-min(tablet) {
+    margin-left: 40px;
+  }
+  @include media-min(desktop) {
+    margin-left: 0;
+  }
 }

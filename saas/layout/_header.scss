@@ -1,34 +1,69 @@
 .header {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 10;
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
 
-  transition: 300ms linear;
+  @include media-min(tablet) {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+
+    transition: 300ms linear;
+  }
+
+  @include media-min(desktop) {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+
+    transition: 300ms linear;
+  }
 }
 
 .header-container {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
 .header-logo {
-  width: 100px;
+
+  @include media-min(tablet) {
+    width: 70px;
+  }
+  @include media-min(desktop) {
+    margin-right: 75px;
+    margin-left: 10px;
+  }
 }
 
 .header-nav {
-  justify-content: left;
+  display: none;
+  @include media-min(tablet) {
+    display: block;
+    justify-content: left;
+  }
 }
 
 .header-nav__list {
-  display: flex;
-  gap: 30px;
-  margin-left: 100px;
-  margin-right: 234px;
+
+  @include media-min(tablet) {
+    display: flex;
+    margin-right: 60px;
+    margin-left: 60px;
+    gap: 15px;
+  }
+  @include media-min(desktop) {
+    gap: 30px;
+    margin-right: 310px;
+  }
 }
 
 .header-nav__link,
@@ -42,13 +77,26 @@
 }
 
 .header-contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: none;
+
+  @include media-min(tablet) {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @include media-min(desktop) {
+    flex-direction: row;
+  }
 }
 
 .header-contact__link {
-  margin-right: 40px;
+  margin-right: 0;
+  
+  @include media-min(desktop) {
+    margin-right: 40px;
+  }
   &:hover,
   &:focus {
     color: var(--accent-txt-cl);
@@ -88,6 +136,13 @@
 
   border: 1px solid #ff6c00;
   border-radius: 25px;
+
+  @include media-min(tablet) {
+    margin: 10px 0;
+  }
+  @include media-min(desktop) {
+    margin: 0;
+  }
 }
 
 .header-scroll-dark {

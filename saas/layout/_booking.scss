@@ -6,13 +6,18 @@
   background-size: cover;
 }
 
-.contacts-container {
+.booking {
   margin-left: auto;
   margin-right: auto;
-}
+  margin-bottom: 85px;
 
-.booking {
-  margin-right: 130px;
+  @include media-min(tablet) {
+    margin-right: 130px;
+  }
+  @include media-min(desktop) {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
 }
 
 .booking__form {
@@ -21,6 +26,8 @@
 }
 
 .booking-btn {
+  margin-left: auto;
+  margin-right: auto;
   padding: 12px 20px;
   width: 160px;
   height: 40px;
@@ -32,8 +39,13 @@
 }
 
 .booking__title {
+  text-align: center;
   margin-bottom: 44px;
   color: var(--light-txt-cl);
+
+  @include media-min(desktop) {
+    text-align: start;
+  }
 }
 
 .booking__wrapper {
@@ -126,6 +138,18 @@
   margin-bottom: 44px;
 }
 
+.contacts {
+  @include media-min(tablet) {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  @include media-min(desktop) {
+    display: block;
+  }
+}
+
 .contacts-list__item {
   &:not(:last-child) {
     margin-bottom: 32px;
@@ -134,6 +158,21 @@
 
 .contacts__address {
   margin-bottom: 70px;
+  width: 322px;
+  font-style: normal;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media-min(tablet) {
+    margin-left: 70px;
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+  @include media-min(desktop) {
+    margin-left: 0;
+    margin-bottom: 70px;
+    margin-right: 0;
+  }
 }
 
 .contacts-list__link {
@@ -146,6 +185,21 @@
   margin-right: 16px;
 }
 
+.working-hours {
+  width: 322px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  @include media-min(tablet) {
+    width: 250px;
+    text-align: center;
+  }
+  @include media-min(desktop) {
+    margin-left: 0;
+  }
+}
+
 .working-hours__schedule {
   color: #9da4bd;
+  text-align: center;
 }
