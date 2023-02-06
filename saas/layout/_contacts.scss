@@ -1,13 +1,30 @@
 .contacts-container {
-  display: flex;
-  justify-content: center;
+  padding: 85px 15px;
+  margin-left: auto;
+  margin-right: auto;
 
-  padding-top: 130px;
-  padding-bottom: 120px;
+  @include media-min(tablet) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 15px;
+  }
+
+  @include media-min(desktop) {
+    padding: 120px 015px;
+    flex-direction: row;
+  }
 }
 
-.contacts-address {
-  font-style: normal;
+.contacts__title {
+  text-align: center;
+
+  @include media-min(tablet) {
+    width: 767px;
+  }
+  @include media-min(desktop) {
+    width: 195px;
+  }
 }
 
 .contacts-uppertitle {
@@ -34,6 +51,10 @@
 
 .contacts-list {
   margin-bottom: 70px;
+
+  @include media-min(tablet) {
+    margin-bottom: 0;
+  }
 }
 
 .contacts-schedule {
@@ -59,4 +80,10 @@
 .working-hours__uppertitle {
   color: var(--light-txt-cl);
   margin-bottom: 20px;
+  display: block;
+  text-align: center;
+  
+  @include media-min(desktop) {
+    text-align: start;
+  }
 }

@@ -1,5 +1,6 @@
 .benefits {
   padding: 85px 0;
+  
   @include media-min(tablet) {
     padding: 100px 0;
   }
@@ -89,6 +90,7 @@
 
 .rewievs__undertitle {
   width: 420px;
+
   @include media-min(tablet) {
     color: var(--dark-txt-cl);
     width: 500px;

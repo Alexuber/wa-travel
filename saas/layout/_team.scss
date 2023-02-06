@@ -10,6 +10,7 @@
   gap: 30px;
   flex-direction: column;
   align-content: center;
+
   @include media-min(desktop) {
     flex-direction: row;
   }
@@ -56,6 +57,7 @@
 
 .team__title {
   margin-bottom: 44px;
+
   @include media-min(tablet) {
     margin-left: 180px;
   }

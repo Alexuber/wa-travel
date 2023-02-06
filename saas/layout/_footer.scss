@@ -7,17 +7,30 @@
   font-size: 11px;
   line-height: calc(15 / 11);
   letter-spacing: 0.2em;
-
+  margin-right: 20px;
   color: var(--grey-cl);
 
-  margin-right: 770px;
   display: inline-block;
+  display: contents;
 }
 
 .footer-copyright {
   display: flex;
+  justify-content: space-between;
 }
 
-.media-list {
+.footer .media-list {
+  padding-right: 0;
   display: flex;
+  position: relative;
+}
+
+.footer .media-item {
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+.footer .media-link {
+  font-size: 11px;
 }

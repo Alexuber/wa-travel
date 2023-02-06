@@ -25,9 +25,6 @@ body {
   @include media-min(desktop) {
     width: 1280px;
   }
-
-  outline: 2px solid red;
-  outline-offset: -2px;
 }
 
 .link {
@@ -74,7 +71,6 @@ body {
 
   &::before {
     content: '';
-    display: block;
     width: 60px;
     height: 1px;
     background-color: var(--main-txt-cl);
@@ -149,4 +145,14 @@ button {
 
 .transparency {
   background-color: black;
+}
+
+.price .uppertitle-theme-dark {
+  margin-left: 10px;
+  @include media-min(tablet) {
+    margin-left: 40px;
+  }
+  @include media-min(desktop) {
+    margin-left: 0;
+  }
 }

@@ -1,5 +1,6 @@
 .hero-container {
   max-width: 480px;
+
   @include media-min(tablet) {
     display: flex;
     position: relative;
@@ -12,6 +13,7 @@
 }
 
 .media-list__link {
+
   @include media-min(tablet) {
     font-weight: 600;
     font-size: 11px;
@@ -61,6 +63,7 @@
 
 .hero-left {
   display: none;
+
   @include media-min(tablet) {
     width: 100px;
     display: flex;
@@ -152,6 +155,7 @@
 
 .hero-controls {
   display: none;
+  
   @include media-min(tablet) {
     display: flex;
     justify-content: center;
