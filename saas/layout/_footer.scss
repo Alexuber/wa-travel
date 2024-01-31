@@ -13,11 +13,16 @@ footer {
     padding: 100px 100px 30px;
     display: flex;
     justify-content: space-between;
-    gap: 145px;
+    gap: 100px;
   }
   @include media-min(desktop) {
     padding-left: 100px;
     padding-right: 100px;
+  }
+  @include media-min(fullHD) {
+    gap: 135px;
+    padding-left: 390px;
+    padding-right: 390px;
   }
 }
 
@@ -107,7 +112,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    width: 225px;
+    width: 280px;
     align-items: flex-start;
     text-align: start;
   }
@@ -128,4 +133,8 @@ footer {
   @include media-min(fullHD) {
     max-width: 320px;
   }
+}
+
+.footer-adress div {
+  justify-content: center;
 }

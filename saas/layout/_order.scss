@@ -36,6 +36,9 @@
   background-position: center;
 }
 
+input[type='text'] {
+  color: white;
+}
 label {
   font-size: 18px;
   line-height: 30px;
@@ -97,16 +100,21 @@ input:focus {
 }
 
 .order-title {
+  text-align: center;
   color: #fff;
 
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 34px;
+
+  @include media-min(desktop) {
+    text-align: left;
+  }
 }
 
 .form-group:last-child {
-  @include media-min(desktop) {
-    display: flex;
-    flex-direction: column;
-  }
+  // @include media-min(desktop) {
+  display: flex;
+  flex-direction: column;
+  // }
 }

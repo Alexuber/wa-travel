@@ -7,6 +7,9 @@
   }
 }
 
+.tours .container {
+  position: relative;
+}
 .tours-switcher {
   display: flex;
   align-items: center;
@@ -27,4 +30,42 @@
   &:focus {
     cursor: pointer;
   }
+}
+
+.tours-slider {
+  overflow: hidden;
+}
+
+.swiper-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 55%;
+  &:hover {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: lightgray;
+  }
+}
+
+.swiper-button-next {
+  position: absolute;
+  right: 1%;
+}
+
+.swiper-button-prev {
+  position: absolute;
+  left: 1%;
+}
+
+.slider-nav {
+  display: none;
+  @include media-min(desktop) {
+    display: block;
+  }
+}
+
+.hero-slider {
+  overflow: hidden;
 }

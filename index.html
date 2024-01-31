@@ -16,17 +16,48 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
+    <div class="swiper-container hero-slider">
+      <div class="swiper-wrapper">
+        <div
+          class="swiper-slide headerSlide"
+          style="background-image: url('./images/hero-banner_@1x_result.jpg')"
+        ></div>
+        <div
+          class="swiper-slide headerSlide"
+          style="background-image: url('./images/advantages_@1x_result.png')"
+        ></div>
+        <div
+          class="swiper-slide headerSlide"
+          style="background-image: url('./images/hero-banner_@1x_result.jpg')"
+        ></div>
+        <!-- Добавьте другие слайды по аналогии -->
+      </div>
+    </div>
     <div class="main-wrapper">
       <header class="header">
         <div class="container">
+          <button class="mobile-menu-btn menu-toggle js-open-menu">
+            <svg class="mobile-menu-btn__icon" width="45" height="45">
+              <use class="mobile-menu-btn__symbol" href="./images/sprite.svg#icon-menu"></use>
+            </svg>
+          </button>
           <div class="top-header-wrapper">
             <a href="#"><img src="./images/logo.png" alt="logo top" width="92px" class="logo" /></a>
 
             <div class="adress-wrapper">
               <address class="address">
-                <p class="adress__info">г. Харьков, ул. Мироносицкая 10</p>
-                <a class="adress__phone" href="tel:+380999908100">+38 (099) 990-81-00</a> (Viber,
-                Telegram)
+                <div>
+                  <img src="./images/icons/location.png" alt="phone-icon" width="13px" />
+                  <p class="adress__info">г. Харьков, ул. Мироносицкая 10</p>
+                </div>
+                <div>
+                  <img src="./images/icons/phone.png" alt="phone-icon" width="17px" /><a
+                    class="adress__phone"
+                    href="tel:+380999908100"
+                    >+38 (099) 990-81-00</a
+                  >
+                  (Viber, Telegram)
+                </div>
               </address>
               <div class="socials">
                 <a href="https://www.instagram.com/"
@@ -88,10 +119,16 @@
       </header>
       <section class="hero">
         <div class="container">
+          <div class="rectangle"></div>
           <h1 class="hero-title">Лучшие предложения по солнечному Египту из Харькова</h1>
           <button class="hero-btn contact-btn">Получить предложение</button>
         </div>
       </section>
+      <div class="heroSlider-pagination">
+        <div class="pagination-item pagination-item--prev"></div>
+        <div class="pagination-item"></div>
+        <div class="pagination-item pagination-item--next"></div>
+      </div>
     </div>
     <section class="tours">
       <div class="container">
@@ -100,94 +137,130 @@
           <li class="tours-switcher__category">Популярные туры</li>
         </ul>
         <div class="tours-slider">
-          <div class="products-slider">
-            <div class="swiper toursSwiper">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper tours-swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide tours-slide">
-                  <img
-                    src="./images/popular-2_@1x_result.png"
-                    alt="sea"
-                    width="100%"
-                    class="tour-img"
-                  />
-                  <div class="tour-info">
-                    <h3 class="tour-title">8 марта в Cyrene Sharm hotel</h3>
-                    <p class="tour-dates">(12.03.2018 — 19.03.2018)</p>
-                    <p class="tour-desc">Перелёт, питание по системе all inclusive, трансфер</p>
-                    <p class="tour-price">
-                      1 259 грн <span><sup>/за 1 человека</sup></span>
-                    </p>
-                  </div>
+          <div class="swiper toursSwiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper tours-swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide tours-slide">
+                <img
+                  src="./images/popular-2_@1x_result.png"
+                  alt="sea"
+                  width="100%"
+                  class="tour-img"
+                />
+                <div class="tour-info">
+                  <h3 class="tour-title">8 марта в Cyrene Sharm hotel</h3>
+                  <p class="tour-dates">(12.03.2018 — 19.03.2018)</p>
+                  <p class="tour-desc">Перелёт, питание по системе all inclusive, трансфер</p>
+                  <p class="tour-price">
+                    1 259 грн <span><sup>/за 1 человека</sup></span>
+                  </p>
                 </div>
-                <div class="swiper-slide tours-slide">
-                  <img
-                    src="./images/popular-1_@1x_result.png"
-                    alt="sea"
-                    width="100%"
-                    class="tour-img"
-                  />
-                  <div class="tour-info">
-                    <h3 class="tour-title">8 марта в Cyrene Sharm hotel</h3>
-                    <p class="tour-dates">(12.03.2018 — 19.03.2018)</p>
-                    <p class="tour-desc">Перелёт, питание по системе all inclusive, трансфер</p>
-                    <p class="tour-price">
-                      1 259 грн <span><sup>/за 1 человека</sup></span>
-                    </p>
-                  </div>
+                <img
+                  src="./images/icons/ellips_1_423.png"
+                  alt="elipse"
+                  width="44px"
+                  class="elipse"
+                />
+              </div>
+              <div class="swiper-slide tours-slide">
+                <img
+                  src="./images/popular-1_@1x_result.png"
+                  alt="sea"
+                  width="100%"
+                  class="tour-img"
+                />
+                <div class="tour-info">
+                  <h3 class="tour-title">8 марта в Cyrene Sharm hotel</h3>
+                  <p class="tour-dates">(12.03.2018 — 19.03.2018)</p>
+                  <p class="tour-desc">Перелёт, питание по системе all inclusive, трансфер</p>
+                  <p class="tour-price">
+                    1 259 грн <span><sup>/за 1 человека</sup></span>
+                  </p>
                 </div>
-                <div class="swiper-slide tours-slide">
-                  <img
-                    src="./images/popular-2_@1x_result.png"
-                    alt="sea"
-                    width="100%"
-                    class="tour-img"
-                  />
-                  <div class="tour-info">
-                    <h3 class="tour-title">8 марта в Cyrene Sharm hotel</h3>
-                    <p class="tour-dates">(12.03.2018 — 19.03.2018)</p>
-                    <p class="tour-desc">Перелёт, питание по системе all inclusive, трансфер</p>
-                    <p class="tour-price">
-                      1 259 грн <span><sup>/за 1 человека</sup></span>
-                    </p>
-                  </div>
+                <img
+                  src="./images/icons/ellips_1_423.png"
+                  alt="elipse"
+                  width="44px"
+                  class="elipse"
+                />
+              </div>
+              <div class="swiper-slide tours-slide">
+                <img
+                  src="./images/popular-2_@1x_result.png"
+                  alt="sea"
+                  width="100%"
+                  class="tour-img"
+                />
+                <div class="tour-info">
+                  <h3 class="tour-title">8 марта в Cyrene Sharm hotel</h3>
+                  <p class="tour-dates">(12.03.2018 — 19.03.2018)</p>
+                  <p class="tour-desc">Перелёт, питание по системе all inclusive, трансфер</p>
+                  <p class="tour-price">
+                    1 259 грн <span><sup>/за 1 человека</sup></span>
+                  </p>
                 </div>
-                <div class="swiper-slide tours-slide">
-                  <img
-                    src="./images/popular-2_@1x_result.png"
-                    alt="sea"
-                    width="100%"
-                    class="tour-img"
-                  />
-                  <div class="tour-info">
-                    <h3 class="tour-title">8 марта в Cyrene Sharm hotel</h3>
-                    <p class="tour-dates">(12.03.2018 — 19.03.2018)</p>
-                    <p class="tour-desc">Перелёт, питание по системе all inclusive, трансфер</p>
-                    <p class="tour-price">
-                      1 259 грн <span><sup>/за 1 человека</sup></span>
-                    </p>
-                  </div>
+                <img
+                  src="./images/icons/ellips_1_423.png"
+                  alt="elipse"
+                  width="44px"
+                  class="elipse"
+                />
+              </div>
+              <div class="swiper-slide tours-slide">
+                <img
+                  src="./images/popular-2_@1x_result.png"
+                  alt="sea"
+                  width="100%"
+                  class="tour-img"
+                />
+                <div class="tour-info">
+                  <h3 class="tour-title">8 марта в Cyrene Sharm hotel</h3>
+                  <p class="tour-dates">(12.03.2018 — 19.03.2018)</p>
+                  <p class="tour-desc">Перелёт, питание по системе all inclusive, трансфер</p>
+                  <p class="tour-price">
+                    1 259 грн <span><sup>/за 1 человека</sup></span>
+                  </p>
                 </div>
-                <div class="swiper-slide tours-slide">
-                  <img
-                    src="./images/popular-2_@1x_result.png"
-                    alt="sea"
-                    width="100%"
-                    class="tour-img"
-                  />
-                  <div class="tour-info">
-                    <h3 class="tour-title">8 марта в Cyrene Sharm hotel</h3>
-                    <p class="tour-dates">(12.03.2018 — 19.03.2018)</p>
-                    <p class="tour-desc">Перелёт, питание по системе all inclusive, трансфер</p>
-                    <p class="tour-price">
-                      1 259 грн <span><sup>/за 1 человека</sup></span>
-                    </p>
-                  </div>
+                <img
+                  src="./images/icons/ellips_1_423.png"
+                  alt="elipse"
+                  width="44px"
+                  class="elipse"
+                />
+              </div>
+              <div class="swiper-slide tours-slide">
+                <img
+                  src="./images/popular-2_@1x_result.png"
+                  alt="sea"
+                  width="100%"
+                  class="tour-img"
+                />
+                <div class="tour-info">
+                  <h3 class="tour-title">8 марта в Cyrene Sharm hotel</h3>
+                  <p class="tour-dates">(12.03.2018 — 19.03.2018)</p>
+                  <p class="tour-desc">Перелёт, питание по системе all inclusive, трансфер</p>
+                  <p class="tour-price">
+                    1 259 грн <span><sup>/за 1 человека</sup></span>
+                  </p>
                 </div>
+                <img
+                  src="./images/icons/ellips_1_423.png"
+                  alt="elipse"
+                  width="44px"
+                  class="elipse"
+                />
               </div>
             </div>
           </div>
+        </div>
+        <div class="slider-nav">
+          <button class="swiper-button-prev swiper-button" type="button">
+            <img src="./images/icons/prev.png" alt="prev-arrow" width="10px" />
+          </button>
+          <button class="swiper-button-next swiper-button" type="button">
+            <img src="./images/icons/next.png" alt="next-arrow" width="10px" />
+          </button>
         </div>
       </div>
     </section>
@@ -252,7 +325,7 @@
           </p>
           <div class="signature">
             <p>Создание сайта -</p>
-            <img src="./images/webakula.png" alt="logo webakula" width="87px" />
+            <a href="#"> <img src="./images/webakula.png" alt="logo webakula" width="87px" /></a>
           </div>
         </div>
         <div class="footer-nav">
@@ -278,13 +351,56 @@
         <div class="footer-contacts">
           <h3 class="footer-titles">Контакты</h3>
           <address class="address footer-adress">
-            <p class="adress__info">г. Харьков, ул. Мироносицкая 10</p>
-            <a class="adress__phone" href="tel:+380999908100">+38 (099) 990-81-00</a> (Viber,
-            Telegram)
+            <div>
+              <img src="./images/icons/location.png" alt="phone-icon" width="13px" />
+              <p class="adress__info">г. Харьков, ул. Мироносицкая 10</p>
+            </div>
+            <div>
+              <img src="./images/icons/phone.png" alt="phone-icon" width="17px" /><a
+                class="adress__phone"
+                href="tel:+380999908100"
+                >+38 (099) 990-81-00</a
+              >
+              (Viber, Telegram)
+            </div>
           </address>
         </div>
       </div>
     </footer>
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <div class="container">
+        <button class="menu-toggle js-close-menu">
+          <svg class="icon-close-mobile-menu" width="45" height="45">
+            <use href="./images/sprite.svg#icon-close-mobile-menu"></use>
+          </svg>
+        </button>
+
+        <div class="mob-wrapper">
+          <ul class="mobile-menu">
+            <li class="mobile-menu__item">
+              <a href="./index.html" class="mobile-menu__link">Головна</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#" class="mobile-menu__link">О компании</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#" class="mobile-menu__link">Про нас</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#" class="mobile-menu__link">Туры</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#" class="mobile-menu__link">Контакты</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#" class="mobile-menu__link">Услуги</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     <script src="./js/index.js" type="module"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

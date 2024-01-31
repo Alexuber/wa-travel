@@ -18,10 +18,19 @@
   }
 }
 
+.address div {
+  display: flex;
+  gap: 10px;
+}
+
 .top-header-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-right: 50px;
+  @include media-min(fullHD) {
+    margin-right: 260px;
+  }
 }
 
 .logo {
@@ -42,11 +51,16 @@
   }
 }
 .main-wrapper {
-  background-color: lightgray;
-  background-image: url(./../images/hero-banner_@1x_result.jpg);
+  position: relative;
+  // background-color: lightgray;
+  // background-image: url(./../images/hero-banner_@1x_result.jpg);
   background-size: cover;
   background-position: center;
   height: 575px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 
   @include media-min(desktop) {
     height: 735px;
@@ -59,6 +73,10 @@
   }
 }
 
+.header .container {
+  position: relative;
+}
+
 .header-nav {
   position: relative;
   height: 300px;
@@ -66,7 +84,7 @@
   display: none;
   @include media-min(desktop) {
     display: block;
-    margin-left: 350px;
+    margin-left: 375px;
   }
   @include media-min(fullHD) {
     margin-left: 770px;
@@ -112,7 +130,9 @@
   left: 21%;
   width: 195px;
 }
-
+.rotated {
+  transform: rotate(180deg);
+}
 .dropdown-menu-2 {
   display: none;
   width: 240px;
@@ -153,5 +173,30 @@
     align-items: center;
     justify-content: center;
     gap: 60px;
+  }
+}
+
+.headerSlide {
+  height: 575px;
+  background-size: cover;
+  background-position: center;
+  @include media-min(desktop) {
+    height: 735px;
+  }
+}
+
+.hero-slider {
+  height: 575px;
+  @include media-min(desktop) {
+    height: 735px;
+  }
+}
+
+.hero-slider .swiper-wrapper {
+  height: 575px;
+  width: 4000px;
+  @include media-min(desktop) {
+    height: 735px;
+    width: 11000px;
   }
 }

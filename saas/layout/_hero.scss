@@ -1,5 +1,30 @@
 .hero {
   padding-top: 80px;
+  @include media-min(desktop) {
+    padding-top: 150px;
+  }
+}
+
+.hero {
+  @include media-min(desktop) {
+    position: relative;
+  }
+}
+
+.rectangle {
+  display: none;
+
+  @include media-min(desktop) {
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 80%;
+    height: 228px;
+    opacity: 0.49;
+    background-color: #004c84;
+    background-image: linear-gradient(96deg, rgba(15, 37, 71, 0.06) 22%, rgba(34, 51, 77, 0) 77%);
+  }
 }
 
 .hero-title {
@@ -8,6 +33,7 @@
   font-weight: 700;
   margin-bottom: 100px;
   @include media-min(desktop) {
+    position: relative;
     margin-left: 100px;
     margin-bottom: 45px;
     font-size: 30px;
@@ -23,9 +49,38 @@
   margin-right: auto;
   margin-bottom: 100px;
   @include media-min(desktop) {
+    position: relative;
     margin-left: 100px;
   }
   @include media-min(fullHD) {
     margin-left: 325px;
   }
+}
+
+.heroSlider-pagination {
+  @include media-min(desktop) {
+    display: none;
+    position: absolute;
+    bottom: 25px;
+    left: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+  @include media-min(fullHD) {
+    left: 390px;
+  }
+}
+
+.pagination-item {
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fbd341;
+}
+
+.pagination-item.active {
+  background-color: white;
 }

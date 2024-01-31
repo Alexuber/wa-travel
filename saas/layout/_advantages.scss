@@ -25,7 +25,7 @@
   @include media-min(desktop) {
     margin-bottom: 55px;
     text-align: left;
-    margin-left: 100px;
+    margin-left: 50px;
   }
   @include media-min(fullHD) {
     margin-left: 325px;
@@ -41,7 +41,7 @@
     text-align: left;
   }
   @include media-min(fullHD) {
-    margin-right: 260px;
+    margin-right: 280px;
   }
 }
 
@@ -58,7 +58,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 100px;
+    margin-left: 50px;
     gap: 90px;
   }
   @include media-min(fullHD) {

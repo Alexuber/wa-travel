@@ -24,11 +24,24 @@
 }
 
 .tours-slide {
+  position: relative;
   background-color: #f8f7f7;
   border-radius: 7px;
   padding: 21px 45px;
 }
 
+.elipse {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+
+  @include media-min(desktop) {
+    height: 44px;
+    width: 44px;
+  }
+}
 .tour-img {
   margin-bottom: 20px;
   @include media-min(desktop) {
