@@ -242,7 +242,7 @@ body {
 
 a:hover,
 a:focus {
-  color: #f3f3f3;
+  color: #9b9b9b;
   cursor: pointer;
 }
 
@@ -561,7 +561,7 @@ footer {
 
 .nav-list__item:hover, .nav-list__item:focus {
   cursor: pointer;
-  color: #f3f3f3;
+  color: #9b9b9b;
 }
 
 .nav-list__item div {
@@ -1353,6 +1353,6 @@ input:focus {
 
 .mobile-menu__item:hover,
 .mobile-menu__item:focus {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(173, 233, 252, 0.6);
   text-decoration: underline;
 }/*# sourceMappingURL=main.css.map */
