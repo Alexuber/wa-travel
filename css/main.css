@@ -189,6 +189,7 @@ img {
 
 body {
   font-family: var(--main-font);
+  position: relative;
 }
 
 .container {
@@ -241,17 +242,13 @@ body {
 
 a:hover,
 a:focus {
-  color: lightgray;
+  color: #f3f3f3;
   cursor: pointer;
 }
 
 button {
   cursor: pointer;
   border: none;
-}
-
-body {
-  position: relative;
 }
 
 footer {
@@ -564,6 +561,7 @@ footer {
 
 .nav-list__item:hover, .nav-list__item:focus {
   cursor: pointer;
+  color: #f3f3f3;
 }
 
 .nav-list__item div {
@@ -759,9 +757,11 @@ footer {
   }
 }
 
+.heroSlider-pagination {
+  display: none;
+}
 @media screen and (min-width: 1280px) {
   .heroSlider-pagination {
-    display: none;
     position: absolute;
     bottom: 25px;
     left: 150px;
@@ -1212,11 +1212,6 @@ input:focus {
   position: relative;
 }
 
-.menu .link:hover,
-.menu .link:focus {
-  text-decoration: underline;
-}
-
 .menu-container .container {
   height: 100%;
   position: relative;
@@ -1274,9 +1269,15 @@ input:focus {
 
 .menu-container .menu-toggle {
   position: absolute;
-  top: 1%;
-  right: 1%;
+  top: 4%;
+  right: 15%;
   fill: #000;
+}
+@media screen and (min-width: 479px) {
+  .menu-container .menu-toggle {
+    top: 1%;
+    right: 1%;
+  }
 }
 
 .mob-wrapper {
@@ -1293,9 +1294,16 @@ input:focus {
   height: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (min-width: 479px) {
+  .mob-wrapper {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
 }
 
 .mobile-menu {
@@ -1346,4 +1354,5 @@ input:focus {
 .mobile-menu__item:hover,
 .mobile-menu__item:focus {
   color: rgba(255, 255, 255, 0.6);
+  text-decoration: underline;
 }/*# sourceMappingURL=main.css.map */

@@ -1,5 +1,6 @@
 body {
   font-family: var(--main-font);
+  position: relative;
 }
 
 .container {
@@ -47,15 +48,11 @@ body {
 
 a:hover,
 a:focus {
-  color: lightgray;
+  color: #f3f3f3;
   cursor: pointer;
 }
 
 button {
   cursor: pointer;
   border: none;
-}
-
-body {
-  position: relative;
 }

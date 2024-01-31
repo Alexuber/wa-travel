@@ -2,11 +2,6 @@
   position: relative;
 }
 
-.menu .link:hover,
-.menu .link:focus {
-  text-decoration: underline;
-}
-
 .menu-container .container {
   height: 100%;
   position: relative;
@@ -64,9 +59,14 @@
 
 .menu-container .menu-toggle {
   position: absolute;
-  top: 1%;
-  right: 1%;
+  top: 4%;
+  right: 15%;
   fill: #000;
+
+  @include media-min(mobile-resp) {
+    top: 1%;
+    right: 1%;
+  }
 }
 
 .mob-wrapper {
@@ -75,7 +75,11 @@
   justify-content: space-between;
   height: 100%;
   flex-wrap: wrap;
-  align-items: flex-end;
+  align-items: center;
+
+  @include media-min(mobile-resp) {
+    align-items: flex-end;
+  }
 }
 
 .mobile-menu {
@@ -127,4 +131,5 @@
 .mobile-menu__item:hover,
 .mobile-menu__item:focus {
   color: rgba(255, 255, 255, 0.6);
+  text-decoration: underline;
 }

@@ -58,8 +58,8 @@
 }
 
 .heroSlider-pagination {
+  display: none;
   @include media-min(desktop) {
-    display: none;
     position: absolute;
     bottom: 25px;
     left: 150px;
