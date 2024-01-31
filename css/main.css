@@ -467,7 +467,7 @@ footer {
 
 .main-wrapper {
   background-color: lightgray;
-  background-image: url(../../images/hero-banner_@1x_result.jpg);
+  background-image: url(./../images/hero-banner_@1x_result.jpg);
   background-size: cover;
   background-position: center;
   height: 575px;
@@ -806,7 +806,7 @@ footer {
 }
 
 .order {
-  background-image: url(../../images/corals.png);
+  background-image: url(./../images/corals.png);
   background-size: cover;
   background-position: center;
 }
