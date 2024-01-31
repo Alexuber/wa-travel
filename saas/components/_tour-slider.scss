@@ -1,0 +1,82 @@
+.tours .container {
+  overflow: hidden;
+}
+
+.toursSwiper {
+  overflow: hidden;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  min-width: 1600px;
+
+  @include media-min(laptop) {
+    min-width: 2700px;
+  }
+  @include media-min(desktop) {
+    min-width: 2800px;
+  }
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.tours-slide {
+  background-color: #f8f7f7;
+  border-radius: 7px;
+  padding: 21px 45px;
+}
+
+.tour-img {
+  margin-bottom: 20px;
+  @include media-min(desktop) {
+    width: 187px;
+  }
+}
+
+.tour-desc {
+  font-size: 14px;
+  line-height: 1.2;
+  color: #3a3a3a;
+  margin-bottom: 30px;
+}
+
+.tour-title {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.tour-dates {
+  font-size: 14px;
+  line-height: 1.2;
+  color: #3a3a3a;
+  margin-bottom: 25px;
+}
+
+.tour-price {
+  font-size: 20px;
+}
+
+.tour-price span {
+  color: #8a8a8a;
+}
+
+.tours-slide {
+  width: 240px;
+
+  @include media-min(laptop) {
+    width: 420px;
+  }
+  @include media-min(desktop) {
+    width: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+}

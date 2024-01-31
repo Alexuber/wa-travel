@@ -1,153 +1,157 @@
-.header {
-  display: none;
-  margin-left: auto;
-  margin-right: auto;
-
-  @include media-min(tablet) {
-    display: block;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-
-    transition: 300ms linear;
-  }
-
+.address {
+  color: #f3f3f3;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  // margin-bottom: 18px;
+  font-size: 12px;
+  // @include media-min(laptop) {
+  //   margin-bottom: 0;
+  // }
   @include media-min(desktop) {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-
-    transition: 300ms linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    font-size: 14px;
   }
 }
 
-.header-container {
+.top-header-wrapper {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
-.header-logo {
-  @include media-min(tablet) {
-    width: 70px;
-  }
+.logo {
   @include media-min(desktop) {
-    margin-right: 75px;
-    margin-left: 10px;
+    margin-left: 100px;
+  }
+  @include media-min(fullHD) {
+    margin-left: 330px;
+  }
+}
+.adress__info {
+  color: #f3f3f3;
+  margin-bottom: 5px;
+
+  @include media-min(desktop) {
+    margin-bottom: 0;
+    margin-right: 55px;
+  }
+}
+.main-wrapper {
+  background-color: lightgray;
+  background-image: url(../../images/hero-banner_@1x_result.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 575px;
+
+  @include media-min(desktop) {
+    height: 735px;
+  }
+}
+
+.header {
+  @include media-min(desktop) {
+    height: 300px;
   }
 }
 
 .header-nav {
-  display: none;
-  @include media-min(tablet) {
-    display: block;
-    justify-content: left;
-  }
-}
-
-.header-nav__list {
-  @include media-min(tablet) {
-    display: flex;
-    margin-right: 90px;
-    margin-left: 60px;
-    gap: 15px;
-  }
-  @include media-min(desktop) {
-    gap: 30px;
-    margin-right: 310px;
-  }
-}
-
-.header-nav__link,
-.header-contact__link {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.1em;
-
-  color: var(--light-txt-cl);
-}
-
-.header-contact {
-  display: none;
-
-  @include media-min(tablet) {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-  }
-
-  @include media-min(desktop) {
-    flex-direction: row;
-  }
-}
-
-.header-contact__link {
-  margin-right: 0;
-
-  @include media-min(desktop) {
-    margin-right: 40px;
-  }
-  &:hover,
-  &:focus {
-    color: var(--accent-txt-cl);
-  }
-}
-
-.header-nav__link {
-  padding-top: 12px;
-  padding-bottom: 20px;
-  display: block;
   position: relative;
+  height: 300px;
+  width: 760px;
+  display: none;
+  @include media-min(desktop) {
+    display: block;
+    margin-left: 350px;
+  }
+  @include media-min(fullHD) {
+    margin-left: 770px;
+  }
+}
 
+.nav-list {
+  border-radius: 10px;
+  padding: 11px 25px;
+  background-color: #fbd341;
+
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.nav-list__item {
   &:hover,
   &:focus {
-    color: var(--accent-txt-cl);
-  }
-
-  &.current::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 4px;
-    border-radius: 4px;
-    background-color: var(--accent-txt-cl);
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    cursor: pointer;
   }
 }
 
-.hero-btn {
-  padding: 12px 20px;
-  width: 165px;
-  height: 40px;
+.nav-list__item div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
 
-  color: #ffffff;
+.nav-list__item img {
+  height: 8px;
+}
 
-  border: 1px solid #ff6c00;
-  border-radius: 25px;
+.dropdown-menu-1 li {
+  padding: 8px 0;
+}
 
-  @include media-min(tablet) {
-    margin: 10px 0;
-  }
+.dropdown-menu-1 {
+  display: none;
+  position: relative;
+  top: 0;
+  left: 21%;
+  width: 195px;
+}
+
+.dropdown-menu-2 {
+  display: none;
+  width: 240px;
+  position: relative;
+  top: 0px;
+  left: 47%;
+}
+
+.dropdown-menu-2 li {
+  padding: 8px 0;
+}
+
+.dropdown-menu {
+  padding: 25px 20px;
+  color: #fff;
+  opacity: 0.8;
+  background-color: #3397e2;
+  box-shadow: -1px 4px 15px 0px rgba(0, 0, 0, 0.34);
+}
+
+.dropdown-menu-1.visible,
+.dropdown-menu-2.visible {
+  display: block; /* Показываем выпадающее меню, если есть класс visible */
+}
+
+.socials {
+  display: none;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  justify-content: center;
+}
+
+.adress-wrapper {
+  display: none;
   @include media-min(desktop) {
-    margin: 0;
-  }
-}
-
-.header-scroll-dark {
-  background-color: #363636;
-  & .header_logo {
-    transition: fill 300ms linear;
-
-    fill: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
   }
 }

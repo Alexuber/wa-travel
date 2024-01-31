@@ -1,36 +1,131 @@
-.footer {
-  padding: 56px 0;
-}
-
-.footer-copyright__copy {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: calc(15 / 11);
-  letter-spacing: 0.2em;
-  margin-right: 20px;
-  color: var(--grey-cl);
-
-  display: inline-block;
-  display: contents;
-}
-
-.footer-copyright {
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer .media-list {
-  padding-right: 0;
-  display: flex;
-  position: relative;
-}
-
-.footer .media-item {
-  &:not(:last-child) {
-    margin-right: 20px;
+footer {
+  background-color: #22334d;
+  color: #fff;
+  padding: 60px 0 0;
+  font-size: 14px;
+  @include media-min(desktop) {
+    padding-top: 0;
   }
 }
 
-.footer .media-link {
-  font-size: 11px;
+.footer .container {
+  @include media-min(desktop) {
+    padding: 100px 100px 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 145px;
+  }
+  @include media-min(desktop) {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+.footer ul li {
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+.footer-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+
+  @include media-min(desktop) {
+    margin-left: 0;
+  }
+}
+
+.footer-desc {
+  margin-bottom: 60px;
+  text-align: center;
+
+  @include media-min(desktop) {
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    padding: 20px 0;
+    text-align: left;
+  }
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  @include media-min(desktop) {
+    justify-content: center;
+    gap: 145px;
+    margin-bottom: 0;
+  }
+}
+
+.footer-nav div {
+  margin-bottom: 30px;
+}
+
+.footer-titles {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+
+  @include media-min(desktop) {
+    text-align: start;
+  }
+}
+
+.signature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+
+  @include media-min(desktop) {
+    justify-content: left;
+    margin-bottom: 0;
+  }
+}
+
+.signature p {
+  margin-right: 15px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #c2c2c2;
+}
+
+.signature img {
+  height: 17px;
+}
+
+.footer-contacts .footer-adress {
+  text-align: center;
+  color: #f3f3f3;
+  @include media-min(desktop) {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 225px;
+    align-items: flex-start;
+    text-align: start;
+  }
+  .adress__info {
+    margin-right: 0;
+  }
+}
+
+.footer-adress .adress__info {
+  color: #f3f3f3;
+}
+
+.footer-adress .adress__phone {
+  color: #f3f3f3;
+}
+
+.footer-info {
+  @include media-min(fullHD) {
+    max-width: 320px;
+  }
 }

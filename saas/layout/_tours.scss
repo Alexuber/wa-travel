@@ -1,0 +1,30 @@
+.tours {
+  padding: 30px 0;
+
+  @include media-min(desktop) {
+    padding-top: 52px;
+    padding-bottom: 57px;
+  }
+}
+
+.tours-switcher {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+
+  font-size: 20px;
+  margin-bottom: 50px;
+
+  @include media-min(desktop) {
+    margin-bottom: 70px;
+  }
+}
+
+.tours-switcher__category--active {
+  color: #fbd341;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
+}
